@@ -1,4 +1,4 @@
-# Run Selenium Tests With JUnit On LambdaTest (Incognito Testing Example)
+# Run Selenium 4 Tests With JUnit On LambdaTest 
 
 ![image](https://user-images.githubusercontent.com/70570645/171432631-dcc31b10-6590-4877-98c0-4ac702fbd441.png)
 
@@ -99,16 +99,9 @@ DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platform", "Windows 10"); // If this cap isn't specified, it will just get the any
                                                               // available one
         capabilities.setCapability("build", "Junit Testing Example");
-        capabilities.setCapability("name", "GeoLocation Test");
+        capabilities.setCapability("name", "Selenium 4 Test");
         capabilities.setCapability("plugin", "git-junit");
-
-      ChromeOptions options = new ChromeOptions();
-        // Setting chrome flag for incognito mode
-        options.addArguments("--incognito");
-        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 ```
-
-You can generate capabilities for your test requirements with the help of our inbuilt [Desired Capability Generator](https://www.lambdatest.com/capabilities-generator/).
 
 ### Executing the Test
 
